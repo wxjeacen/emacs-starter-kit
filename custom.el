@@ -71,7 +71,7 @@ HOOKS can be one list or just a hook."
 ;; set default color theme
 (require 'color-theme)
 (color-theme-blackboard)
-
+(global-linum-mode 1)
 
 (require 'auto-complete-settings)
 
