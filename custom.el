@@ -132,3 +132,8 @@ HOOKS can be one list or just a hook."
   (x-send-client-message
    nil 0 nil "_NET_WM_STATE" 32
    '(1 "_NET_WM_STATE_MAXIMIZED_VERT" 0)))
+
+(setq apropos-do-all t)
+(setq x-select-enable-clipboard t)
+
+(require 'hs-minor-mode-settings)
