@@ -35,6 +35,7 @@ HOOKS can be one list or just a hook."
        (if (stringp element) element (symbol-name element)))
      strings))))
 
+(require 'hs-minor-mode-settings)
 
 (require 'cedet)
 ;;(semantic-load-enable-minimum-features) ;; or enable more if you wish
@@ -82,6 +83,7 @@ HOOKS can be one list or just a hook."
 (set-default-font "-altsys-Serafettin Cartoon-normal-italic-ultra-expanded-*-*-*-*-*-*-0-iso10646-1")
 (add-hook 'c++-mode-hook
           (lambda ()
+            (hs-minor-mode )
             (c-set-style "linux")
             (setq tab-width 8)
             (setq c-basic-offset 8)
@@ -90,6 +92,7 @@ HOOKS can be one list or just a hook."
 
 (add-hook 'c-mode-hook
           (lambda ()
+            (hs-minor-mode)
             (c-set-style "linux")
             (setq tab-width 8)
             (setq c-basic-offset 8)
@@ -99,6 +102,7 @@ HOOKS can be one list or just a hook."
 
 (add-hook 'java-mode-hook
           (lambda ()
+            (hs-minor-mode)
             (c-set-style "linux")
             (setq tab-width 8)
             (setq c-basic-offset 8)
@@ -136,4 +140,4 @@ HOOKS can be one list or just a hook."
 (setq apropos-do-all t)
 (setq x-select-enable-clipboard t)
 
-(require 'hs-minor-mode-settings)
+
