@@ -1,10 +1,10 @@
-;;; color-theme-ahei.el --- Color Theme by ahei
+;;; color-theme-devil.el --- Color Theme by devil
 
-;; Copyright (C) 2009 ahei
+;; Copyright (C) 2009 devil
 
-;; Author: ahei <ahei0802@126.com>
-;; Keywords: color theme ahei
-;; Time-stamp: <2010-04-05 15:56:28 Monday by ahei>
+;; Author: devil <devil0802@126.com>
+;; Keywords: color theme devil
+;; Time-stamp: <2010-04-05 15:56:28 Monday by devil>
 
 ;; This file is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -23,16 +23,16 @@
 
 ;;; Commentary:
 ;;
-;; Color Theme by ahei
+;; Color Theme by devil
 
 ;;; Installation:
 ;;
 ;; Copy dired-lis.el to your load-path and add following statement
 ;; to your .emacs:
 ;;
-;; (require 'color-theme-ahei)
+;; (require 'color-theme-devil)
 ;;
-;; then M-x color-theme-ahei to use this color theme.
+;; then M-x color-theme-devil to use this color theme.
 
 ;;; History:
 ;;
@@ -41,12 +41,12 @@
 
 ;;; Code:
 
-(defface ahei-hl-line-face
+(defface devil-hl-line-face
   '((((type tty)) :underline t)
     (t :background "AntiqueWhite4" :underline t :inverse-video nil))
-  "ahei's `hl-line-face'.")
+  "devil's `hl-line-face'.")
 
-(setq hl-line-face 'ahei-hl-line-face)
+(setq hl-line-face 'devil-hl-line-face)
 
 (if window-system
     (progn
@@ -81,11 +81,10 @@
   (defun color-theme-adjust-hl-line-face()))
 
 (eval-when-compile (require 'color-theme-autoloads))
-(defun color-theme-ahei ()
-  "Color theme by ahei, created 2009-11-20."
+(defun color-theme-devil ()
   (interactive)
   (color-theme-install
-   '(color-theme-ahei
+   '(color-theme-devil
      ((background-color . "black")
       (background-mode . dark)
       (border-color . "black")
@@ -116,7 +115,7 @@
       (cua-normal-cursor-color . "green")
       (cua-overwrite-cursor-color . "yellow")
       (cua-read-only-cursor-color . "darkgreen")
-      (hl-line-face . ahei-hl-line-face)
+      (hl-line-face . devil-hl-line-face)
       (ispell-highlight-face . isearch)
       (list-matching-lines-buffer-name-face . underline)
       (list-matching-lines-face . match)
@@ -626,8 +625,8 @@
       (color-theme-adjust-hl-line-face)))
 
 (eval-after-load "color-theme"
-  `(add-to-list 'color-themes '(color-theme-ahei "color-theme-ahei" "ahei")))
+  `(add-to-list 'color-themes '(color-theme-devil "color-theme-devil" "devil")))
 
-(provide 'color-theme-ahei)
+(provide 'color-theme-devil)
 
-;;; color-theme-ahei.el ends here
+;;; color-theme-devil.el ends here

@@ -140,4 +140,4 @@ HOOKS can be one list or just a hook."
 (setq apropos-do-all t)
 (setq x-select-enable-clipboard t)
 
-(require 'color-theme-ahei)
+(require 'color-theme-devil)
