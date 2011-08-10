@@ -141,3 +141,4 @@ HOOKS can be one list or just a hook."
 (setq x-select-enable-clipboard t)
 
 (require 'color-theme-devil)
+(color-theme-devil)
